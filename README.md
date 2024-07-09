@@ -3,8 +3,6 @@ Official PyTorch implementation of CMML from the paper:
 
 [CMML: Contextual Modulation Meta Learningfor Cold-Start Recommendation](https://arxiv.org/abs/2108.10511).
 
-Note that we have updated our experimental results on scenario-specific setting and please check the appendix of our new arxiv version.
-
 ## Code
 We offer the code of CMML for scenario-specific setting in cmml_scenario and user-specific setting in cmml_user. You can simply check these directories for specific instructions for training on CMML and main baseline algorithms.
 
