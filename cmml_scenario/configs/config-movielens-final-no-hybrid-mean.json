@@ -1,0 +1,45 @@
+{
+  "recommender": {
+    "model_type": "meta_final"
+  },
+  "seed":0,
+  "lstm_dim": 0,
+  "hybrid": "no",
+  "lstm_bias": false,
+  "bias_init": false,
+  "bias_init_value": 0.1,
+  "input_size": 128,
+  "hyper_hidden": 64,
+  "optim": {
+    "lr": 0.0001,
+    "weight_decay": 1e-5
+  },
+  "training": {
+    "batch_size": 128,
+    "negative_ratio": 1,
+    "loss": "MyHingeLoss",
+    "loss_config": {
+      "margin": 1
+    },
+    "step_penalty": 0.0,
+    "max_steps": 100000
+  },
+  "save": true,
+  "few_num": 64,
+  "support": {
+    "step": 20,
+    "min_step": 4,
+    "batch_size": 64,
+    "input_gate": true,
+    "forget_gate": true,
+    "lstm_config": {
+      "layer_norm": true,
+      "hidden_size": 16
+    },
+    "user_graph": false,
+    "item_graph": false,
+    "learn_bias": true,
+    "flexible_step": true,
+    "hidden_input": false
+  }
+}
